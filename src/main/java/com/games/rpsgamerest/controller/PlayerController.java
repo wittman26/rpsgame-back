@@ -60,6 +60,7 @@ public class PlayerController {
 	 */
 	@GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<PlayerDTO> getPlayerById(@PathVariable("id") String id) {
+		LOGGER.info("getPlayerById: " + id);
 		Player playerFound = playerService.listById(id);
 		PlayerDTO playerDTO = new PlayerDTO();
 		if (playerFound != null) {
@@ -81,7 +82,7 @@ public class PlayerController {
 		if (playerFound == null) {
 			playerFound = playerService.save(new Player(playerDTO.getId()));
 		}
-		
+
 		RoundGame roundGame = playGameBusiness.playRPS(playerFound);
 		playerService.updatePlayerRound(playerFound, roundGame);
 
