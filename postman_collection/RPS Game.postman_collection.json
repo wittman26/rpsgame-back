@@ -1,0 +1,268 @@
+{
+	"info": {
+		"_postman_id": "eb820727-e12d-4623-80b2-33062c59a7a5",
+		"name": "RPS Game",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5585851"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9191/rpsgame/api/health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/rpsgame/api/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"rpsgame",
+						"api",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/rpsgame/api/1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\""
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9191/rpsgame/api/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"rpsgame",
+						"api",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/rpsgame/api",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\""
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9191/rpsgame/api",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"rpsgame",
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/rpsgame/api",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\""
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": \"string\",\n  \"roundGameList\": [\n    {\n      \"player1Choice\": \"string\",\n      \"player2Choice\": \"string\",\n      \"result\": \"WIN\"\n    }\n  ],\n  \"totalDraws\": 0,\n  \"totalLoses\": 0,\n  \"totalRoundsPlayed\": 0,\n  \"totalWins\": 0\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9191/rpsgame/api",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"rpsgame",
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/rpsgame/api",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\""
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9191/rpsgame/api",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"rpsgame",
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/rpsgame/api/wittman",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9191/rpsgame/api/Arley",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"rpsgame",
+						"api",
+						"Arley"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/error",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\""
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9191/error",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"error"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
