@@ -2,6 +2,24 @@
 
 RPS game is an API REST application example built with Spring Boot framework.
 
+# Install in Docker
+
+```
+docker build -t wittman26/rpsgame-back:latest .
+docker run -d -p 49168:9191 wittman26/rpsgame-back:latest
+```
+
+To display image list
+```
+docker ps
+```
+Get container-id and set it in the following command to show logs
+
+```
+docker logs --follow <container-id>
+```
+
+
 # Getting Started
 
 ## Run application

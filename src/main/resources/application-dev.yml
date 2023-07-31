@@ -1,3 +1,8 @@
 basepath: /rpsgame/api
 server:
   port: '9191'
+logging:
+  level:
+    org:
+      springframework:
+        DEBUG
